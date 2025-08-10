@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="generator" content="Hugo 0.148.1">
+	<title>Mistress&#39;s Cookbook</title>
+	<link rel="canonical" href="https://cookbook.mistressofbad.art/">
+	<link rel='alternate' type='application/rss+xml' title="Mistress&#39;s Cookbook RSS" href='/index.xml'>
+	<link rel='stylesheet' type='text/css' href='/style.css'>
+	<link rel="icon" href="/favicon.svg">
+	<meta name="description" content="The fast-loading recipe site with cooking only and no ads.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="index, follow">
+	<meta charset="utf-8">
+</head>
+<body>
+<main>
+<header><h1 id="tag_☕ Mistress&#39;s Cookbook 🍜">
+☕ Mistress&#39;s Cookbook 🍜
+</h1></header>
+<article>
+
+<h2 id="what-do-you-want-to-cook">What do you want to cook?</h2>
+<div class="search js-only">
+  <input type="text" id="search" placeholder="Search ALL Recipes...">
+  <button id="clear-search">
+    <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Backspace</title><path d="M135.19 390.14a28.79 28.79 0 0021.68 9.86h246.26A29 29 0 00432 371.13V140.87A29 29 0 00403.13 112H156.87a28.84 28.84 0 00-21.67 9.84v0L46.33 256l88.86 134.11z" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="32"></path><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M336.67 192.33L206.66 322.34M336.67 322.34L206.66 192.33M336.67 192.33L206.66 322.34M336.67 322.34L206.66 192.33"></path></svg>
+  </button>
+</div>
+<script>
+// @license magnet:?xt=urn:btih:5ac446d35272cc2e4e85e4325b146d0b7ca8f50c&dn=unlicense.txt Unlicense
+
+document.addEventListener("DOMContentLoaded", () => {
+  for (e of document.getElementsByClassName("js-only")) {
+    e.classList.remove("js-only");
+  }
+
+  const recipes = document.querySelectorAll("#artlist li");
+  const search = document.getElementById("search");
+  const oldheading = document.getElementById("newest-recipes");
+  const clearSearch = document.getElementById("clear-search");
+  const artlist = document.getElementById("artlist");
+
+  search.addEventListener("input", () => {
+    // grab search input value
+    const searchText = search.value.toLowerCase().trim().normalize('NFD').replace(/\p{Diacritic}/gu, "");
+    const searchTerms = searchText.split(" ");
+    const hasFilter = searchText.length > 0;
+
+    artlist.classList.toggle("list-searched", hasFilter);
+    oldheading.classList.toggle("hidden", hasFilter);
+
+    // for each recipe hide all but matched
+    recipes.forEach(recipe => {
+      const searchString = `${recipe.textContent} ${recipe.dataset.tags}`.toLowerCase().normalize('NFD').replace(/\p{Diacritic}/gu, "");
+      const isMatch = searchTerms.every(term => searchString.includes(term));
+
+      recipe.hidden = !isMatch;
+      recipe.classList.toggle("matched-recipe", hasFilter && isMatch);
+    })
+  })
+
+  clearSearch.addEventListener("click", () => {
+    search.value = "";
+    recipes.forEach(recipe => {
+      recipe.hidden = false;
+      recipe.classList.remove("matched-recipe");
+    })
+
+    artlist.classList.remove("list-searched");
+    oldheading.classList.remove("hidden");
+  })
+})
+// @license-end
+</script>
+<h2 id="newest-recipes">Newest Recipes</h2>
+<ul id=artlist>
+<li data-tags="[baking berry sweet time-consuming]" ><a href="https://cookbook.mistressofbad.art/summer-berry-danish/">Summer Berry Danish</a></li>
+<li data-tags="[easy korean spicy quick]" ><a href="https://cookbook.mistressofbad.art/tteokbokki/">Tteokbokki</a></li>
+<li data-tags="[salmon soup finnish fish easy]" ><a href="https://cookbook.mistressofbad.art/finnish-salmon-soup/">Finnish Salmon Soup</a></li>
+</ul>
+
+<h2 id="or-browse-by-category">Or Browse by Category&hellip;</h2>
+   <ul id="tagcloud">
+    <li><a href="https://cookbook.mistressofbad.art/tags/baking" id="tag_baking">Baking</a></li>
+    <li><a href="https://cookbook.mistressofbad.art/tags/berry" id="tag_berry">Berry</a></li>
+    <li><a href="https://cookbook.mistressofbad.art/tags/easy" id="tag_easy">Easy</a></li>
+    <li><a href="https://cookbook.mistressofbad.art/tags/finnish" id="tag_finnish">Finnish</a></li>
+    <li><a href="https://cookbook.mistressofbad.art/tags/fish" id="tag_fish">Fish</a></li>
+    <li><a href="https://cookbook.mistressofbad.art/tags/korean" id="tag_korean">Korean</a></li>
+    <li><a href="https://cookbook.mistressofbad.art/tags/quick" id="tag_quick">Quick</a></li>
+    <li><a href="https://cookbook.mistressofbad.art/tags/salmon" id="tag_salmon">Salmon</a></li>
+    <li><a href="https://cookbook.mistressofbad.art/tags/soup" id="tag_soup">Soup</a></li>
+    <li><a href="https://cookbook.mistressofbad.art/tags/spicy" id="tag_spicy">Spicy</a></li>
+    <li><a href="https://cookbook.mistressofbad.art/tags/sweet" id="tag_sweet">Sweet</a></li>
+    <li><a href="https://cookbook.mistressofbad.art/tags/time-consuming" id="tag_time-consuming">Time-Consuming</a></li>
+    </ul>
+
+
+
+
+
+</article>
+</main>
+
+<footer>
+	<a href="https://cookbook.mistressofbad.art/">https://cookbook.mistressofbad.art/</a><br><br><a href="/index.xml"><img src="/rss.svg" style="max-height:1.5em" alt="RSS Feed" title="Subscribe via RSS for updates."></a>
+</footer>
+
+</body>
+</html>
