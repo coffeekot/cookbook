@@ -2,13 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://cookbook.mistressofbad.art/</loc>
-    <lastmod>2025-08-10T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://cookbook.mistressofbad.art/tags/8x8/</loc>
     <lastmod>2025-08-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://cookbook.mistressofbad.art/tags/9x13/</loc>
+    <lastmod>2025-08-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://cookbook.mistressofbad.art/tags/apple/</loc>
     <lastmod>2025-08-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://cookbook.mistressofbad.art/tags/baking/</loc>
@@ -35,6 +35,12 @@
     <loc>https://cookbook.mistressofbad.art/tags/korean/</loc>
     <lastmod>2025-08-10T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://cookbook.mistressofbad.art/</loc>
+    <lastmod>2025-08-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://cookbook.mistressofbad.art/tags/pie/</loc>
+    <lastmod>2025-08-10T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://cookbook.mistressofbad.art/tags/quick/</loc>
     <lastmod>2025-08-10T00:00:00+00:00</lastmod>
   </url><url>
@@ -57,6 +63,9 @@
     <lastmod>2025-08-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://cookbook.mistressofbad.art/tags/time-consuming/</loc>
+    <lastmod>2025-08-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://cookbook.mistressofbad.art/tsvetayevsky-apple-pie/</loc>
     <lastmod>2025-08-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://cookbook.mistressofbad.art/tteokbokki/</loc>
