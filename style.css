@@ -1,7 +1,7 @@
 body {
 	background: black ;
 	color: white ;
-	max-width: 1000px ;
+	max-width: 850px ;
 	margin: auto ;
 	padding: 0 16px ;
 	margin-bottom: 500px ;
@@ -287,6 +287,8 @@ button#clear-search:hover {
 #tag_wine:before { content: "🍷" ; }
 
 #tag_korean:before { content: "🇰🇷" ; }
+#tag_sponge:before { content: "🧽" ; }
+#tag_room-temp-butter:before { content: "🌡️" ; }
 
 .cryptocontainer {
     display: flex ;
