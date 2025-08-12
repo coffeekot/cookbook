@@ -57,6 +57,16 @@ h1 {
 	text-align: center ;
 }
 
+.title-link, .title-link:visited {
+	color: white;
+	text-decoration: none;
+}
+
+.title-link:hover {
+	color: #a3a3ff;
+	text-decoration: none;
+}
+
 h2 {
 	color: #a1c2fc ;
 	text-align: center ;
@@ -196,7 +206,7 @@ button#clear-search:hover {
 #tag_austrian:before { content: "🇦🇹" ;}
 #tag_bacon:before { content: "🥓" ; }
 #tag_beans:before { content: "🫘" ; }
-#tag_beef:before { content: "🐄" ; }
+#tag_beef:before { content: "🥩" ; }
 #tag_berry:before { content: "🍒" ; }
 #tag_baking:before { content: "🥧" ; }
 #tag_belgian:before { content: "🇧🇪" ; }
@@ -289,6 +299,12 @@ button#clear-search:hover {
 #tag_korean:before { content: "🇰🇷" ; }
 #tag_sponge:before { content: "🧽" ; }
 #tag_room-temp-butter:before { content: "🌡️" ; }
+#tag_nuts:before { content: "🌰" ; }
+#tag_avocado:before { content: "🥑" ; }
+#tag_cookie:before { content: "🍪" ; }
+#tag_cucumber:before { content: "🥒" ; }
+
+
 
 .cryptocontainer {
     display: flex ;
