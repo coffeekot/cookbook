@@ -303,6 +303,9 @@ button#clear-search:hover {
 #tag_avocado:before { content: "🥑" ; }
 #tag_cookie:before { content: "🍪" ; }
 #tag_cucumber:before { content: "🥒" ; }
+#tag_slop:before { content: "🍛" ; }
+#tag_basic:before { content: "🫓" ; }
+
 
 
 
